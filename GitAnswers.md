@@ -1,4 +1,4 @@
-7. #Git will detect a merge conflict when both branch1 and branch 2 have modified the same line in file.txt.
+#7. Git will detect a merge conflict when both branch1 and branch 2 have modified the same line in file.txt.
 #example
 git add file.txt
 git commit -m "Initial commit"
