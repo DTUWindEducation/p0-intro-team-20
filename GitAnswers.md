@@ -52,9 +52,8 @@ A **branch** in Git is a parallel version of the code that allows you to work on
 
 ### 6. How could you visualize a branch with 3 commits, and then another branch that breaks off after the second commit and has a single commit?
 
-gitGraph
-   commit
-   commit
-   commit
-   branch alicia
-   commit
+graph TD
+    A[Commit 1] --> B[Commit 2]
+    B --> C[Commit 3]
+    C --> D{Branch: alicia}
+    D --> E[Commit 4 on alicia]
