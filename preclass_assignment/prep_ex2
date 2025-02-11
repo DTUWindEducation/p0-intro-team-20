@@ -1,0 +1,7 @@
+def goldilocks(lenght):
+    if lenght < 140:
+        return "unhappy!"
+    elif lenght > 150:
+        return "unhappy!"
+    else:
+        return "perfect!"
