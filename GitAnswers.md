@@ -12,7 +12,46 @@
 ### 3. Why would I ever want to use Git, but not GitLab?
 - You might want to use **Git** without GitLab if you don’t need a central server or collaborative features that GitLab provides. Git can be used locally on your computer for small projects or personal use, without the need for a remote server. If you don’t need to manage team workflows or CI/CD pipelines, Git alone may suffice.
 
-### 4. What are the steps to update the GitLab server with some changes I made on my computer?
-1. **Stage** your changes:
+### 4. What are the steps to update the GitHub server with some changes I made on my computer?
+
+To update the **GitHub server** with the changes you've made locally, follow these steps:
+
+1. **Stage Your Changes**  
+   First, you need to stage the files that you've modified, added, or deleted. Staging files makes them ready to be committed to your local repository. You can stage individual files or all modified files:
+
+   - To stage specific files:
+     ```bash
+     git add <filename>
+     ```
+     Replace `<filename>` with the name of the file you want to stage.
+
+   - To stage all modified files in the repository:
+     ```bash
+     git add .
+     ```
+
+2. **Commit Your Changes**  
+   After staging your changes, you need to commit them to your local repository. A commit includes your staged changes along with a descriptive message that explains the changes you made. 
+
+   To commit your staged changes, use the following command:
    ```bash
-   git add .
+   git commit -m "Descriptive commit message"
+
+
+3. **Push the Changes to GitHub**  
+   After committing your changes locally, the next step is to push those changes to the **GitHub server**. Pushing updates the remote repository with the changes made on your local machine.
+
+   To push your changes to the corresponding branch on GitHub, use the following command:
+   ```bash
+   git push origin <branch-name>
+
+
+### 5. What is a branch and why would I use one?
+
+A **branch** in Git is a parallel version of the code that allows you to work on different tasks or features independently without affecting the main codebase. Branches are useful for isolating changes, collaborating with others, and experimenting with new ideas before merging them into the main project.
+
+### 6. How could you visualize a branch with 3 commits, and then another branch that breaks off after the second commit and has a single commit?
+
+*---*---*---*  main
+         |
+         *  alicia
