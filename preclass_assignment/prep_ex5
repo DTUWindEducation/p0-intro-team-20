@@ -1,0 +1,15 @@
+def clean_pitch(pitch_angles, status_signals):
+    cleaned_pitch = []
+    for i in range(len(pitch_angles)):
+        angle = pitch_angles[i]
+        status = status_signals[i]
+        if (angle < 0 or angle > 90) and status > 0:
+            cleaned_pitch.append(-999)
+        else:
+            cleaned_pitch.append(angle)
+    return cleaned_pitch
+
+# Example usage:
+pitch_angles = [10, 95, 45, -5, 85]
+status_signals = [0, 1, 0, 2, 0]
+print(clean_pitch(pitch_angles, status_signals))  # Output: [10, -999, 45, -999, 85]

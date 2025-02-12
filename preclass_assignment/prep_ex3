@@ -1,0 +1,4 @@
+def square_list(number_list):
+    for i in range(len(number_list)):
+        number_list[i]=number_list[i]**2
+    return number_list

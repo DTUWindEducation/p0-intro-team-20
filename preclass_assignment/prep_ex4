@@ -1,0 +1,12 @@
+
+def fibonacci_stop(max):
+    for i in range(max):
+        if i == 0:
+            fib = [0]
+        elif i == 1:
+            fib.append(1)
+        else:
+            fib.append(fib[-1] + fib[-2])
+        if fib[-1] >= max:
+            return fib[:-1]
+        return fib
