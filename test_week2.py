@@ -17,30 +17,12 @@ def test_greet(capsys):
     assert captured.out == 'Hello, world!\n'  # check that the greeting was what we expect
 
 
-# # @pytest.mark.parametrize("bed_length, expected_output", [
-# #     (135, "The bed is too small.\n"),
-# #     (145, "Goldilocks is happy with the bed.\n"),
-# #     (160, "The bed is too large.\n"),
-# # ])
-# def test_goldilocks(capsys, bed_length, expected_output):
-#     """Check goldilocks returns expected output"""
-#     # When
-#     fxn.goldilocks(bed_length)
-#     captured = capsys.readouterr()  # Capture printed output
+def test_goldilocks(capsys):
+    """Check that goldilocks() prints the expected message for one test case."""
+    # Given
+    bed_length = 135
+    expected_output = "The bed is too small.\n"
 
-#     # Then
-#     assert captured.out == expected_output, f"Expected {expected_output}, but got {captured.out}"
-
-
-# import pytest
-
-# @pytest.mark.parametrize("bed_length, expected_output", [
-#     (135, "The bed is too small.\n"),
-#     (145, "Goldilocks is happy with the bed.\n"),
-#     (160, "The bed is too large.\n"),
-# ])
-def test_goldilocks(capsys, bed_length, expected_output):
-    """Check goldilocks() prints expected messages based on bed length."""
     # When
     fxn.goldilocks(bed_length)  # Call the function
     captured = capsys.readouterr()  # Capture printed output
