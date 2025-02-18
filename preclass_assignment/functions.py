@@ -1,16 +1,16 @@
 # TEAM 20
 # Exercise 1
 def greet(name):
-    return f"Hello, {name}!"
+    print(f"Hello, {name}!")
 
 # Exercise 2
 def goldilocks(bed_length):
     if bed_length < 140:
-        return "The bed is too small."
+        print("The bed is too small.")
     elif bed_length > 150:
-        return "The bed is too large."
+        print("The bed is too large.")
     else:
-        return "Goldilocks is happy with the bed."
+        print("Goldilocks is happy with the bed.")
 
 # Exercise 3
 def square_list_from_user(numbers):
