@@ -1,4 +1,4 @@
-# Collaboration Strategy
+git# Collaboration Strategy
 
 ## Team Structure
 We have decided to continue working individually without forming subteams.
